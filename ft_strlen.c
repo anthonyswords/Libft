@@ -6,7 +6,7 @@
 /*   By: aespadas <aespadas@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:26:33 by aespadas          #+#    #+#             */
-/*   Updated: 2023/09/13 15:40:26 by aespadas         ###   ########.fr       */
+/*   Updated: 2023/09/13 16:21:25 by aespadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (*s++)
