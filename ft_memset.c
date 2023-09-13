@@ -6,7 +6,7 @@
 /*   By: aespadas <aespadas@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:54:26 by aespadas          #+#    #+#             */
-/*   Updated: 2023/09/13 19:06:04 by aespadas         ###   ########.fr       */
+/*   Updated: 2023/09/13 19:46:21 by aespadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memset(void *b, int c, size_t len)
 		*init = c;
 		init++;
 	}
-	return (b);
+	return ((void *) b);
 }
 /*
 #include <stdio.h>
