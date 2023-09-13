@@ -6,7 +6,7 @@
 /*   By: aespadas <aespadas@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:54:26 by aespadas          #+#    #+#             */
-/*   Updated: 2023/09/13 16:25:26 by aespadas         ###   ########.fr       */
+/*   Updated: 2023/09/13 19:06:04 by aespadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	char	*init;
 
-	if (b == NULL)
-		return (NULL);
 	init = b;
 	while (len--)
 	{
@@ -26,7 +24,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -42,9 +40,13 @@ int main() {
     // Prueba con un solo carácter (llenar con 'B')
     char str3[5] = "12345";
     char str4[5] = "12345";
-    char *result3 = (char *)ft_memset(str3, 'B', 3);
-    char *result4 = (char *)memset(str4, 'B', 3);
+	char str10[1] = "1";
+    char *result3 = (char *)ft_memset(str3, 'B', 5);
+    char *result4 = (char *)memset(str4, 'B', 5);
     assert(memcmp(result3, result4, 5) == 0);
+	
+	char *result9 = (char *)ft_memset(str10, 'A', -1);
+    assert(result9 == NULL);
 
     // Prueba con una cadena vacía
     char str5[1] = "";
@@ -56,4 +58,4 @@ int main() {
     printf("Todas las pruebas pasaron con éxito.\n");
 
     return 0;
-}
+}*/
