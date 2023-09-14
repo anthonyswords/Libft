@@ -37,7 +37,7 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*
+
 #include <stdio.h>
 #include <assert.h>
 
@@ -70,4 +70,4 @@ int main() {
     printf("Each tests run succesfully.\n");
 
     return 0;
-}*/
+}
