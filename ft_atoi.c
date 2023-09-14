@@ -37,7 +37,7 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*
+
 #include <stdio.h>
 #include <assert.h>
 
@@ -67,7 +67,7 @@ int main() {
     // Caso de prueba con cadena vacía
     assert(ft_atoi("") == 0);
 
-    printf("Todas las pruebas pasaron con éxito.\n");
+    printf("Each tests run succesfully.\n");
 
     return 0;
-}*/
+}
