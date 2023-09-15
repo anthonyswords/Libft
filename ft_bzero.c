@@ -12,8 +12,9 @@
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n){
-	unsigned char *k;
+void	ft_bzero(void *s, size_t n)
+{
+	unsigned char	*k;
 
 	k = (unsigned char *)s;
 	while (n--)
