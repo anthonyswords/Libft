@@ -18,6 +18,7 @@
 # include <unistd.h>
 
 void	*ft_memset(void *b, int c, size_t len);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
